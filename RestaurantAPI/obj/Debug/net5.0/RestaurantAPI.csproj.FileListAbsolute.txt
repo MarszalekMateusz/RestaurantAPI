@@ -62,3 +62,8 @@ C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\NLog.
 C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\NLog.Extensions.Logging.dll
 C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\NLog.Web.AspNetCore.dll
 C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\nlog.config
+C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\Microsoft.OpenApi.dll
+C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\bin\Debug\net5.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Marszal\source\repos\RestaurantAPI\RestaurantAPI\obj\Debug\net5.0\RestaurantAPI.MvcApplicationPartsAssemblyInfo.cs

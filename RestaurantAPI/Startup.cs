@@ -33,7 +33,10 @@ namespace RestaurantAPI
             services.AddScoped<RestaurantSeeder>();
             services.AddAutoMapper(this.GetType().Assembly); // Automapper
             services.AddScoped<IRestaurantService, RestaurantService>(); // jako IRestaurantService chcemy zarejestrowaæ typ teg serwisu czyli RestaurantService
+            services.AddScoped<IDishService, DishService>(); 
             services.AddScoped<ErrorHandlingMiddleware>();
+            services.AddScoped<RequestTimeMiddleware>();
+            services.AddSwaggerGen();
         }
          
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,8 +48,14 @@ namespace RestaurantAPI
                 app.UseDeveloperExceptionPage();
             }
             app.UseMiddleware<ErrorHandlingMiddleware>(); // przed wywo³aniem metody UseHttpsRedirection
-
+            app.UseMiddleware<RequestTimeMiddleware>();
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Restaurant API");
+            });
 
             app.UseRouting();
 
